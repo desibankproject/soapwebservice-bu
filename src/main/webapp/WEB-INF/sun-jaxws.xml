@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints
+  xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+  version="2.0">
+  <!-- Here we are registering web service 
+  and our web service can be accessed by below url-pattern
+   -->
+      <endpoint
+      name="passportSoapEndpoint"
+      implementation="com.soap.web.model.PassportSoapEndpoint"
+      url-pattern="/passportSoapEndpoint"/>
+</endpoints>
