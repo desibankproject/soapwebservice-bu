@@ -21,5 +21,10 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j
         <servlet-name>metro</servlet-name>
         <url-pattern>/passportSoapEndpoint</url-pattern>
           </servlet-mapping>
+          
+              <servlet-mapping>
+        <servlet-name>metro</servlet-name>
+        <url-pattern>/factorialEndpoint</url-pattern>
+          </servlet-mapping>
   
 </web-app>

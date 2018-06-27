@@ -9,6 +9,10 @@ import javax.jws.WebService;
 @WebService
 public class PassportSoapEndpoint {
 	
+	public String uploadPassport(Passport passport) {
+		return null;
+	}
+	
 	
 	public List<Passport> findPassports() {
 		List<Passport> passports=new ArrayList<Passport>();

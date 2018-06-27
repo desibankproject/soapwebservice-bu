@@ -9,4 +9,9 @@
       name="passportSoapEndpoint"
       implementation="com.soap.web.model.PassportSoapEndpoint"
       url-pattern="/passportSoapEndpoint"/>
+      
+       <endpoint
+      name="/factorialEndpoint"
+      implementation="com.soap.web.model.FactorialEndpoint"
+      url-pattern="/factorialEndpoint"/>
 </endpoints>
