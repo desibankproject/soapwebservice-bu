@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fruits xmlns="http://www.fresh.com/fruits"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.fresh.com/fruits fruits.xsd ">
+	<fruit>
+		<name>Apple</name>
+		<color>Red</color>
+		 <price>133</price>	
+	</fruit>
+	<fruit>
+		<name>Mango</name>
+		<color>Yellow</color>
+		 <price>234</price>	
+	</fruit>
+	
+	<fruit>
+		<name>Guava</name>
+		<color>Yellow</color>
+		 <price>234</price>	
+	</fruit>
+</fruits>

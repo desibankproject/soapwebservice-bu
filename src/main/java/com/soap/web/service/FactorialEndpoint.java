@@ -1,8 +1,14 @@
-package com.soap.web.model;
+package com.soap.web.service;
 
 import javax.jws.WebService;
 
+import org.springframework.stereotype.Service;
+
+import com.soap.web.model.ErrorMessage;
+import com.soap.web.model.NumNotValidException;
+
 @WebService
+@Service("FactorialEndpoint")
 public class FactorialEndpoint {
 	public int calFact(int num) throws NumNotValidException {
 			if(num<0){

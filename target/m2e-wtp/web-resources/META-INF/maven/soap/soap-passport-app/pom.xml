@@ -8,6 +8,7 @@
   <name>soap-passport-app Maven Webapp</name>
   <url>http://maven.apache.org</url>
   	<properties>
+  		<spring.version>4.3.5.RELEASE</spring.version>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
@@ -20,12 +21,64 @@
 			<version>2.2.8</version>
 		</dependency>
 		
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- Spring web module -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<!-- This is responsible for spring and metro integration-->
+			<dependency>
+				    <groupId>org.jvnet.jax-ws-commons.spring</groupId>
+				    <artifactId>jaxws-spring</artifactId>
+				    <version>1.9</version>
+				                   <exclusions>
+                                      <exclusion>
+                                                <groupId>javax.servlet</groupId>
+                                                <artifactId>servlet-api</artifactId>
+                                      </exclusion>
+                                      <exclusion>
+                                                <groupId>org.springframework</groupId>
+                                                <artifactId>spring</artifactId>
+                                      </exclusion>
+                                      <exclusion>
+                                                <groupId>org.springframework</groupId>
+                                                <artifactId>spring-core</artifactId>
+                                      </exclusion>
+                                      <exclusion>
+                                                <groupId>org.springframework</groupId>
+                                                <artifactId>spring-context</artifactId>
+                                      </exclusion>
+                                       <exclusion>
+                                                <groupId>org.springframework</groupId>
+                                                <artifactId>spring-web</artifactId>
+                                      </exclusion>
+                                      <exclusion>
+                                                <groupId>org.jvnet.staxex</groupId>
+                                                <artifactId>stax-ex</artifactId>
+                                      </exclusion>
+				  </exclusions>  
+			</dependency>
 		 <!-- jax-ws runtime from glassfish Metro - project tango -->
-    <dependency>
+    <!-- <dependency>
         <groupId>org.glassfish.metro</groupId>
         <artifactId>webservices-rt</artifactId>
         <version>2.3</version>
-    </dependency>
+    </dependency> -->
   </dependencies>
   <build>
     <finalName>soap-passport-app</finalName>

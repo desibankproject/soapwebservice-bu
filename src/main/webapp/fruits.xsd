@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.fresh.com/fruits"
+	xmlns:tns="http://www.fresh.com/fruits" elementFormDefault="qualified">
+	<element name="fruits" type="tns:Fruits"/>	
+	<!-- 
+	  class Fruits{
+	    List<Fruit> fruit;
+	  }
+	 -->
+	<complexType name="Fruits">
+			<sequence>
+				<element name="fruit" type="tns:Fruit" minOccurs="0" maxOccurs="3"/>			
+			</sequence>
+	</complexType>
+	
+	<!-- 
+	 class Fruit {
+	 	String name;
+	 }
+	 -->
+	<complexType name="Fruit">
+			<sequence>
+				 		<element name="name" type="string"/>			
+						 <element name="color" type="string"/>
+				 		<element name="price" type="int"/>
+			</sequence>
+	</complexType>
+</schema>

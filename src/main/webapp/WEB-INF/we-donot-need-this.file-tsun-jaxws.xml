@@ -7,11 +7,11 @@
    -->
       <endpoint
       name="passportSoapEndpoint"
-      implementation="com.soap.web.model.PassportSoapEndpoint"
+      implementation="com.soap.web.service.PassportSoapEndpoint"
       url-pattern="/passportSoapEndpoint"/>
       
        <endpoint
       name="/factorialEndpoint"
-      implementation="com.soap.web.model.FactorialEndpoint"
+      implementation="com.soap.web.service.FactorialEndpoint"
       url-pattern="/factorialEndpoint"/>
 </endpoints>
