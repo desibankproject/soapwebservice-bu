@@ -1,13 +1,20 @@
-package com.soap.web.model;
+package com.passport.dao.entity;
 
 import java.util.Arrays;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * 
  * @author nagendra
  *
  */
-public class Passport {
+
+@Document(collection = "passports")
+public class PassportEntity {
+	
+	 @Id
 	private String id;
 	private String number;
 	private String firstName;
@@ -19,6 +26,7 @@ public class Passport {
 	private String country;
 	private String expiryDate;
 	
+
 	public String getId() {
 		return id;
 	}
@@ -101,10 +109,11 @@ public class Passport {
 
 	@Override
 	public String toString() {
-		return "Passport [id=" + id + ", number=" + number + ", firstName=" + firstName + ", lastName=" + lastName
+		return "PassportEntity [id=" + id + ", number=" + number + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", middleName=" + middleName + ", photo=" + Arrays.toString(photo) + ", marritalStatus="
 				+ marritalStatus + ", address=" + address + ", country=" + country + ", expiryDate=" + expiryDate + "]";
 	}
+
 
 
 }
