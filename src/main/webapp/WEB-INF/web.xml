@@ -12,7 +12,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j
     -->
    <context-param>
    		<param-name>contextConfigLocation</param-name>
-   		<param-value>/WEB-INF/zara-root-web-appication-context.xml</param-value> 
+   		<param-value>/WEB-INF/spring-context/spring-root-web-appication-context.xml</param-value> 
    </context-param>
    
   <listener>
